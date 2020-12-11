@@ -1,2 +1,2 @@
-http://ywtech.shop/
-배포 사이트입니다.
+배포 사이트: http://ywtech.shop/
+

@@ -19,7 +19,7 @@ newsapi = NewsApiClient(api_key='e65f8f56bf7a4bdeb9a2923031113604')
 # api
 @app.route('/')
 def home():
-    return render_template('APIindex.html')
+    return render_template('index.html')
 
 
 @app.route('/headline', methods=['GET'])

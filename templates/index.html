@@ -7,9 +7,9 @@
     <title> YW_TECH의 지금뉴스!</title>
 
     <!-- meta tags -->
-    <meta property="og:title" content="영우의 지금뉴스!"/>
-    <meta property="og:description" content="헤드라인 뉴스를 보여줍니다."/>
-    <meta property="og:image" content="{{ url_for('static', filename='meta_image.jpeg') }}"/>
+    <meta property="og:title" content="영우의 지금뉴스!" />
+    <meta property="og:description" content="헤드라인 뉴스를 보여줍니다." />
+    <meta property="og:image" content="{{ url_for('static', filename='meta_image.jpeg') }}" />
 
     <!-- favicon  -->
     <link rel="shortcut icon" href="static/favicon-16.ico" type="image/x-icon">
@@ -20,21 +20,19 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-          crossorigin="anonymous">
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-            crossorigin="anonymous"></script>
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
     <!-- Fontawesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
@@ -45,7 +43,6 @@
 
     <!-- CSS -->
     <style type="text/css">
-
         * {
             font-family: roboto;
         }
@@ -145,25 +142,17 @@
             top: 0;
             left: 0;
             max-width: 100%;
-            /*padding: .75em 1em;*/
             color: rgba(0, 0, 0, .6);
             border-top: 2px solid rgba(0, 0, 0, .1) !important;
             background: #fff;
         }
 
-        /*.card-inverse .btn {*/
-        /*    border: 1px solid rgba(0, 0, 0, .05);*/
-        /*}*/
-        .profile-inline ~ .card-title {
+        .profile-inline~.card-title {
             display: inline-block;
             margin-left: 4px;
             vertical-align: top;
         }
 
-        /*.meta a {*/
-        /*    text-decoration: none;*/
-        /*    color: rgba(0, 0, 0, .4);*/
-        /*}*/
         .inline {
             display: inline;
         }
@@ -173,9 +162,6 @@
             float: right;
         }
 
-        /*.meta a:hover {*/
-        /*    color: rgba(0, 0, 0, .87);*/
-        /*}*/
         .news {
             width: 200px
         }
@@ -215,7 +201,6 @@
         .d-flex {
             min-width: 150px;
         }
-
     </style>
 </head>
 
@@ -227,8 +212,8 @@
         (d.head || d.body).appendChild(s);
     })();
 
-    <!--Start of Tawk.to Script-->
-    type = "text/javascript"
+    < !--Start of Tawk.to Script-- >
+        type = "text/javascript"
     var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
     (function () {
         var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
@@ -239,7 +224,7 @@
         s0.parentNode.insertBefore(s1, s0);
     })();
 
-    <!--서버시간.onload-->
+    // <!--서버시간.onload-->
     window.onload = function () {                         // 페이지가 로딩되면 실행
         printTime();
     }
@@ -249,17 +234,13 @@
         showArticle1();
         $(`#cards-box`).html();
         $(`#headline`).html();
-
-        // $(".ScrapButton").click(function () {
-        //     console.log("안녕하세요!")
-        // })
     })
 
     $(function popover() {
         $('[data-toggle="popover"]').popover()
     });
 
-    <!--서버시간 함수-->
+    // <!--서버시간 함수-->
     function printTime() {
         let clock = document.getElementById("clock");
         let now = new Date();
@@ -269,7 +250,7 @@
         setTimeout("printTime()", 1000);
     }
 
-    <!--헤드라인검색 상자 열고 닫기-->
+    // <!--헤드라인검색 상자 열고 닫기-->
     function openClose() {
         // id 값 post-box의 display 값이 block 이면(= 눈에 보이면)
         if ($("#post-box").css("display") == "block") {
@@ -285,35 +266,30 @@
         }
     }
 
-    <!--키워드 상자 중복 열고 닫기-->
+    // <!--키워드 상자 중복 열고 닫기-->
     function openClose1() {
-        // id 값 post-box의 display 값이 block 이면(= 눈에 보이면)
         if ($("#post-box1").css("display") == "block") {
-            // post-box를 가리고
             $("#post-box1").hide();
-            // 다시 버튼을 클릭하면, 박스 열기를 할 수 있게 텍스트 바꿔두기
             $("#btn-post-box1").text("키워드 검색");
         } else {
-            // 아니면(눈에 보이지 않으면) post-box를 펴라
             $("#post-box1").show();
-            // 다시 버튼을 클릭하면, 박스 닫기를 할 수 있게 텍스트 바꿔두기
             $("#btn-post-box1").text("키워드 검색");
         }
     }
 
-    <!--헤드라인 상자 중복 방지-->
+    // <!--헤드라인 상자 중복 방지-->
     function notReduplication() {
         if ($("#post-box").css("display") == "block")
             $(`#post-box1`).hide()
     }
 
-    <!--키워드 검색 상자 중복 방지-->
+    // <!--키워드 검색 상자 중복 방지-->
     function notReduplication1() {
         if ($("#post-box1").css("display") == "block")
             $(`#post-box`).hide()
     }
 
-    <!--isEmpty 함수-->
+    // <!--isEmpty 함수-->
     function isEmpty(value) {
         if (value === null) {
             return ''
@@ -363,7 +339,7 @@
                     let headlines = '';
                     for (let i = 0; i < articles.length; i++) {
                         let article = articles[i]
-                        let {url, urlToImage, description} = article
+                        let { url, urlToImage, description } = article
 
                         let title = article['title']
                         let titleSplit = title.split('-')
@@ -384,6 +360,7 @@
                             urlToImage = "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60";
 
                         makeCard(realTitle, publisher, date, time, url, urlToImage, description)
+
                         // li 태그를 만듬.
                         headline_html = headlineText(realTitle, publisher, url)
                         headlines = headlines + headline_html
@@ -417,7 +394,6 @@
         $(`#cards-box`).append(tempHtml)
 
     }
-
 
     function makeNews(headlines) {
         let temp_Html =
@@ -454,40 +430,40 @@
         }
 
         $.ajax({
-                type: "GET",
-                url: `/everything?q=${keyword}&sort_by=${sort_by}`,
-                data: {},
-                success: function (response) {
-                    if (response["result"] == "success") {
-                        alert(response['msg'])
-                        let articles = response['everything']['articles']
-                        let headlines1 = '';
+            type: "GET",
+            url: `/everything?q=${keyword}&sort_by=${sort_by}`,
+            data: {},
+            success: function (response) {
+                if (response["result"] == "success") {
+                    alert(response['msg'])
+                    let articles = response['everything']['articles']
+                    let headlines1 = '';
 
-                        for (let i = 0; i < articles.length; i++) {
-                            let article = articles[i]
-                            let {title, url, urlToImage, description} = article
+                    for (let i = 0; i < articles.length; i++) {
+                        let article = articles[i]
+                        let { title, url, urlToImage, description } = article
 
-                            let publishedAt = article['publishedAt']
-                            let date = publishedAt.split('T')[0]
-                            let beforeTime = publishedAt.split('T')[1]
-                            let time = beforeTime.split('Z')[0]
-                            let headline_html1;
+                        let publishedAt = article['publishedAt']
+                        let date = publishedAt.split('T')[0]
+                        let beforeTime = publishedAt.split('T')[1]
+                        let time = beforeTime.split('Z')[0]
+                        let headline_html1;
 
-                            if (title | publishedAt | url | description === null | '')
-                                continue;
+                        if (title | publishedAt | url | description === null | '')
+                            continue;
 
-                            if (urlToImage === null | '') {
-                                urlToImage = "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60";
-                            }
-
-                            makeCard1(title, date, time, url, urlToImage, description)
-                            headline_html1 = headlineText1(title, url)
-                            headlines1 = headlines1 + headline_html1
+                        if (urlToImage === null | '') {
+                            urlToImage = "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60";
                         }
-                        makeNews1(headlines1)
+
+                        makeCard1(title, date, time, url, urlToImage, description)
+                        headline_html1 = headlineText1(title, url)
+                        headlines1 = headlines1 + headline_html1
                     }
+                    makeNews1(headlines1)
                 }
             }
+        }
         )
     }
 
@@ -545,77 +521,76 @@
                    &nbsp&nbsp<span class="dot"></span>&nbsp&nbsp`
     }
 
-    function scrapNews1(title, date, time, url, urlToImage, description) {
-        $.ajax({
-            type: "POST",
-            url: "/scrap",
-            data: {
-                'title': title,
-                'date': date,
-                'time': time,
-                'url': url,
-                'url_image': urlToImage,
-                'desc': description
-            },
-            success: function (response) {
-                if (response["result"] == "success") {
-                    alert(response['msg'])
-                } else {
-                    alert('스크랩에 실패했습니다.')
-                }
-            }
-        })
-    }
+    // scrap_function
+    // function scrapNews1(title, date, time, url, urlToImage, description) {
+    //     $.ajax({
+    //         type: "POST",
+    //         url: "/scrap",
+    //         data: {
+    //             'title': title,
+    //             'date': date,
+    //             'time': time,
+    //             'url': url,
+    //             'url_image': urlToImage,
+    //             'desc': description
+    //         },
+    //         success: function (response) {
+    //             if (response["result"] == "success") {
+    //                 alert(response['msg'])
+    //             } else {
+    //                 alert('스크랩에 실패했습니다.')
+    //             }
+    //         }
+    //     })
+    // }
 
-    function scrap_list() {
-        $(`#cards-box`).empty();
-        $(`#post-box`).hide();
-        $(`#post-box1`).hide();
+    // function scrap_list() {
+    //     $(`#cards-box`).empty();
+    //     $(`#post-box`).hide();
+    //     $(`#post-box1`).hide();
+    //     $.ajax({
+    //         type: "GET",
+    //         url: "/scrap",
+    //         data: {},
+    //         success: function (response) {
+    //             if (response["result"] == "success") {
+    //                 alert(response['msg'])
+    //                 let scrap_articles = response['scrap_list']
+    //                 for (let i = 0; i < scrap_articles.length; i++) {
+    //                     let scrap_article = scrap_articles[i]
+    //                     let {title, publisher, date, time, url, url_image, desc} = scrap_article
+    //                     makeScrap(title, publisher, date, time, url, url_image, desc)
+    //                 }
+    //             } else {
+    //                 alert('스크랩에 실패했습니다.')
+    //             }
+    //         }
+    //     })
+    // }
 
-        $.ajax({
-            type: "GET",
-            url: "/scrap",
-            data: {},
-            success: function (response) {
-                if (response["result"] == "success") {
-                    alert(response['msg'])
-                    let scrap_articles = response['scrap_list']
-                    for (let i = 0; i < scrap_articles.length; i++) {
-                        let scrap_article = scrap_articles[i]
-                        let {title, publisher, date, time, url, url_image, desc} = scrap_article
-                        makeScrap(title, publisher, date, time, url, url_image, desc)
-                    }
-                } else {
-                    alert('스크랩에 실패했습니다.')
-                }
-            }
-        })
-    }
+    // function makeScrap(title, publisher, date, time, url, url_image, desc) {
+    //     publisher = isEmpty(publisher)
+    //     url_image = isEmpty(url_image)
+    //     desc = isEmpty(desc)
 
-
-    function makeScrap(title, publisher, date, time, url, url_image, desc) {
-        publisher = isEmpty(publisher)
-        url_image = isEmpty(url_image)
-        desc = isEmpty(desc)
-
-        let tempScrap =
-            `<div class="card">
-                    <div class="card card-inverse card-info">
-                        <img class="card-img-top" src=${url_image}>
-                            <div class="card-block">
-                                <h4>
-                                    <a href=${url} class="card-title">${title}</a>
-                                </h4>
-                                <h5>${publisher}</h5>
-                                <div class="card-text">${desc}</div>
-                            </div>
-                            <div class="card-footer">
-                                <div class="inline"><small>${date}&nbsp${time}</small></div>
-                            </div>
-                        </div>
-                </div>`
-        $(`#cards-box`).append(tempScrap)
-    }
+    //     let tempScrap =
+    //         `<div class="card">
+    //                 <div class="card card-inverse card-info">
+    //                     <img class="card-img-top" src=${url_image}>
+    //                         <div class="card-block">
+    //                             <h4>
+    //                                 <a href=${url} class="card-title">${title}</a>
+    //                             </h4>
+    //                             <h5>${publisher}</h5>
+    //                             <div class="card-text">${desc}</div>
+    //                         </div>
+    //                         <div class="card-footer">
+    //                             <div class="inline"><small>${date}&nbsp${time}</small></div>
+    //                         </div>
+    //                     </div>
+    //             </div>`
+    //     $(`#cards-box`).append(tempScrap)
+    // }
 
     document.querySelectorAll('img').forEach((img) => {
         img.onerror = function () {
@@ -651,132 +626,131 @@
 
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
-    Disqus.</a></noscript>
+        Disqus.</a></noscript>
+
 <body>
-<div class="container mt-5" id="headline">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="d-flex justify-content-between align-items-top breaking-news bg-white">
-                <div class="d-flex flex-row flex-grow-1 flex-fill justify-content-center bg-danger py-2 text-white px-1 news">
-                    <span class="d-flex align-items-center">&nbsp;Google News</span></div>
-                <marquee class="news-scroll" behavior="scroll" direction="left" onmouseover="this.stop();"
-                         onmouseout="this.start();">
-                    <ul>
-                        <li><a href="${url}">${realTitle}-${publisher}</a></li>
-                    </ul>
-                </marquee>
+    <div class="container mt-5" id="headline">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="d-flex justify-content-between align-items-top breaking-news bg-white">
+                    <div
+                        class="d-flex flex-row flex-grow-1 flex-fill justify-content-center bg-danger py-2 text-white px-1 news">
+                        <span class="d-flex align-items-center">&nbsp;Google News</span></div>
+                    <marquee class="news-scroll" behavior="scroll" direction="left" onmouseover="this.stop();"
+                        onmouseout="this.start();">
+                        <ul>
+                            <li><a href="${url}">${realTitle}-${publisher}</a></li>
+                        </ul>
+                    </marquee>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<div>
-    <div class="wrap">
-        <div class="jumbotron">
-            <div class="center">
-                <h1 class="display-1 jumbo_title">지금 뉴스!</h1>
-                <h3 class="display-6 googleNewsSize">현재시간 기준으로 Google News 를 보여줍니다.</h3>
-                <hr class="my-4">
-                <h3>서버시간: &nbsp&nbsp<span id="clock"></span></h3>
-                <hr class="my-4">
-                <p class="lead">
-                    <button onclick="openClose(), notReduplication()" id="btn-post-box" type="button"
+    <div>
+        <div class="wrap">
+            <div class="jumbotron">
+                <div class="center">
+                    <h1 class="display-1 jumbo_title">지금 뉴스!</h1>
+                    <h3 class="display-6 googleNewsSize">현재시간 기준으로 Google News 를 보여줍니다.</h3>
+                    <hr class="my-4">
+                    <h3>서버시간: &nbsp&nbsp<span id="clock"></span></h3>
+                    <hr class="my-4">
+                    <p class="lead">
+                        <button onclick="openClose(), notReduplication()" id="btn-post-box" type="button"
                             class="btn btn-primary btn-lg">헤드라인 검색
-                    </button>
-                    <button onclick="openClose1(), notReduplication1()" id="btn-post-box1" type="button"
+                        </button>
+                        <button onclick="openClose1(), notReduplication1()" id="btn-post-box1" type="button"
                             class="btn btn-outline-primary btn-lg">
-                        키워드 검색
-                    </button>
+                            키워드 검색
+                        </button>
 
-                    <button onclick="scrap_list()" id="btn-post-box2" type="button"
-                            class="btn btn-warning btn-lg">
-                        스크랩 기사 보기
-                    </button>
-                </p>
-            </div>
-        </div>
-        <div id="post-box" class="form-post" style="display:none">
-            <div>
-                <div class="form-group">
-                    <label for="exampleFormControlSelect1">카테고리 선택</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
-                        <option>general</option>
-                        <option>business</option>
-                        <option>entertainment</option>
-                        <option>sports</option>
-                        <option>technology</option>
-                        <option>health</option>
-                        <option>science</option>
-                    </select>
+                        <button onclick="scrap_list()" id="btn-post-box2" type="button" class="btn btn-warning btn-lg">
+                            스크랩 기사 보기
+                        </button>
+                    </p>
                 </div>
+            </div>
+            <div id="post-box" class="form-post" style="display:none">
                 <div>
                     <div class="form-group">
-                        <label for="exampleFormControlSelect1">국가선택</label>
-                        <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="popover"
-                                title="Country ?"
-                                data-content="kr: korea, br: brazil, de: Germany, gb: Great Britain, jp: japan, us: United States of America  ">
-                            ?
-                        </button>
-                        <select class="form-control" id="exampleFormControlSelect2">
-                            <option>kr</option>
-                            <option>br</option>
-                            <option>de</option>
-                            <option>gb</option>
-                            <option>jp</option>
-                            <option>us</option>
+                        <label for="exampleFormControlSelect1">카테고리 선택</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>general</option>
+                            <option>business</option>
+                            <option>entertainment</option>
+                            <option>sports</option>
+                            <option>technology</option>
+                            <option>health</option>
+                            <option>science</option>
                         </select>
                     </div>
-                    <button type="button" class="btn btn-primary" onclick="showArticle()">기사검색</button>
+                    <div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">국가선택</label>
+                            <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="popover"
+                                title="Country ?"
+                                data-content="kr: korea, br: brazil, de: Germany, gb: Great Britain, jp: japan, us: United States of America  ">
+                                ?
+                            </button>
+                            <select class="form-control" id="exampleFormControlSelect2">
+                                <option>us</option>
+                                <option>kr</option>
+                                <option>de</option>
+                                <option>gb</option>
+                            </select>
+                        </div>
+                        <button type="button" class="btn btn-primary" onclick="showArticle()">기사검색</button>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div id="post-box1" class="form-post" style="display:none">
-            <div>
-                <div class="form-group">
-                    <label for="post-url">키워드 입력</label>
-                    <input id="post-url" class="form-control" placeholder="키워드를 입력해주세요.">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlSelect1">정렬 기준</label>
-                    <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="popover" title="sort By?"
-                            data-content="publishedAt = 최신기사가 먼저나옵니다.
+            <div id="post-box1" class="form-post" style="display:none">
+                <div>
+                    <div class="form-group">
+                        <label for="post-url">키워드 입력</label>
+                        <input id="post-url" class="form-control" placeholder="키워드를 입력해주세요.">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">정렬 기준</label>
+                        <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="popover"
+                            title="sort By?" data-content="publishedAt = 최신기사가 먼저나옵니다.
                                       relevancy = 밀접한 관련이 있는 검색.&nbsp
                                       popularity = 인기있는 출처와 출판사의 기사가 먼저 나옵니다.">?
-                    </button>
-                    <select class="form-control" id="exampleFormControlSelect3">
-                        <option>publishedAt</option>
-                        <option>relevancy</option>
-                        <option>popularity</option>
-                    </select>
-                </div>
-                <button type="button" class="btn btn-primary" onclick="showArticle1()">기사검색</button>
-            </div>
-        </div>
-        <div id="cards-box" class="card-columns">
-            <div class="card card-inverse">
-                <img class="card-img-top" src="https://picsum.photos/200/150/?random">
-                <div class="card-block">
-                    <figure class="profile profile-inline">
-                        <img src="https://picsum.photos/200/150/?random" class="profile-avatar" alt="">
-                    </figure>
-                    <h4 class="card-title">Tawshif Ahsan Khan</h4>
-                    <div class="card-text">
-                        Tawshif is a web designer living in Bangladesh.
-                    </div>
-                </div>
-                <div class="card-footer">
-                    <div class="vertical_inline">
-                        <button class="btn btn-dark float-right btn ScrapButton" data-url="">
-                            <i class="far fa-bookmark fa-lg"></i>
                         </button>
+                        <select class="form-control" id="exampleFormControlSelect3">
+                            <option>publishedAt</option>
+                            <option>relevancy</option>
+                            <option>popularity</option>
+                        </select>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="showArticle1()">기사검색</button>
+                </div>
+            </div>
+            <div id="cards-box" class="card-columns">
+                <div class="card card-inverse">
+                    <img class="card-img-top" src="https://picsum.photos/200/150/?random">
+                    <div class="card-block">
+                        <figure class="profile profile-inline">
+                            <img src="https://picsum.photos/200/150/?random" class="profile-avatar" alt="">
+                        </figure>
+                        <h4 class="card-title">Tawshif Ahsan Khan</h4>
+                        <div class="card-text">
+                            Tawshif is a web designer living in Bangladesh.
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="vertical_inline">
+                            <button class="btn btn-dark float-right btn ScrapButton" data-url="">
+                                <i class="far fa-bookmark fa-lg"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
+            <hr class="my-4">
+            <div id="disqus_thread"></div>
         </div>
-        <hr class="my-4">
-        <div id="disqus_thread"></div>
     </div>
-</div>
 </body>
 </html>
